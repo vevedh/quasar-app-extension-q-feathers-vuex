@@ -12,7 +12,7 @@ export default boot(async ({ router, store }) => {
     if (process.env.NODE_ENV === 'production') {
       apiUrl = window.location.origin
     } else {
-      //confPath = window.location.origin+'/cacem.config.json'
+      
       apiUrl = (window.location.origin.split(':')[2] == "8080") ? "<%= prompts.locale_feathersjs %>" : window.location.origin
 
 
